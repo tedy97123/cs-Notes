@@ -1,0 +1,15 @@
+In this section , the topic is creating , editing and viewing files created.
+
+echo - use this command to write to a file.
+echo "hey" > hey.txt - the > writes to that file "hey".
+
+cat - prints on the terminal whats in the file
+
+>> - use this command to append to a file 
+> - use this command to add to a file 
+
+touch - create new file 
+
+
+nano - terminal text editor to edit a file 
+gedit - open gui interface for text editor 

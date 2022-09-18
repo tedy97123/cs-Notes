@@ -1,0 +1,21 @@
+What is covered in this section - How to install files , How to install updates , How to get file sfrom github.
+
+Update System - apt update && apt upgrade  
+    - Whats been updated latey and what needs to be downlaoded.
+
+Install package - apt install ( ** then the name of the package you want to install**)
+    example - apt install python-pip/python3-pip <-- what this dose is install pip in your Linux instance.
+
+github install - 
+    cd /opt 
+    git clone (*url*)
+    cd into folder name 
+    run file = ./(*filename*)
+
+    use github for hacking - https://github.com/Dewalt-arch/pimpmykali
+
+
+text editor in linux - 
+    sudo apt intall gedit - installs text editor
+    mousepad test.txt or gedit test.txt or nano test.txt either one works to bring up the text editor 
+

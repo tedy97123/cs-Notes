@@ -1,0 +1,28 @@
+- = file
+d = directory 
+r = read permissions
+w = write permissions
+x = execute permissions
+
+
+1st group - owner of the file 
+2nd group - permission of the group that own the file 
+3rd group - all other users .
+
+example = (drwxr-xr-x)
+
+chmod - change mode of the file 
++ =  add permission to the file
+777 = god mode for file 
+
+give user acces to files run - chown (username) (file)
+
+adduser = adds new user
+
+cat /etc/shadow - displays hashed passwords for users. 
+
+su = switch user 
+
+sudo passwd root
+
+in order to give permissions to other users to change file permission you need to have them in the sudoers file.

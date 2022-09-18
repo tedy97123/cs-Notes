@@ -1,0 +1,16 @@
+This file will have general commands to run in KALI LINUX shell
+
+    - pwd (Present Working Directory) " Hey where we at?"
+    - cd ( Change Directory)  add "."" to go back a directory.
+    - cat - print content of folder 
+
+    - ls - List everything that is in the folder.
+    - ~ means your in your home folder.
+    - mkdir - Create a new directory
+    - rmdir - remove directory
+    - ls -la reveal hidden directory
+    - mv - move file 
+    - locate - looks through system to find file typed after command 
+    - updatedb - update the system db
+    -passwd - change password
+    - man - instruction for any command you are running 

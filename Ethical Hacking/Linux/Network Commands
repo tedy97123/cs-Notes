@@ -1,0 +1,10 @@
+ifconfig - fconfig is a system administration utility in Unix-like operating systems for network interface configuration. The utility is a command-line interface tool and is also used in the system startup scripts of many operating systems.
+
+updated version of ifconfig is 
+
+ip a = IP address 
+ip n  = IP neighbor 
+ip r - IP routing tables 
+
+
+ssh-keygen
