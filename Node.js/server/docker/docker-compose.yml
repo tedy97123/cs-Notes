@@ -1,0 +1,27 @@
+services:
+  node_backend: 
+    container_name: postgres 
+    image: postgres:latest
+    build:
+      context: . 
+    ports: 
+      - '5432:5432'
+    enviorment:
+    - EXTERNAL_PORT = 5432
+    - PGUSER = 'tedy97'
+    - PGPASSWORD = 'Peeman200!'
+    - PGDATABASE = 'postgres'
+    - PGHOST = 'localhost'
+    depends_on:
+      - postgres 
+  db: 
+    container_name: postgres 
+    image: postgres:latest 
+    ports :
+      - '5432:5432'
+    enviorment: 
+     - POSTGRES_USER = tedy97
+     - POSTGRES_PASSWORD = Peeman200! 
+     - POSTGRES_DB= 'postgres'
+    volumes: 
+      -  postgres:latest/dbService
