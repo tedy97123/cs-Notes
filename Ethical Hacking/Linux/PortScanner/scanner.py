@@ -18,10 +18,11 @@ print("TIme started: "+str(datetime.now()))
 print("-" * 50)
 
 try:
-	for port in range(8000,9000):
+	for port in range(1,65535):
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		socket.setdefaulttimeout(1)
 		result = s.connect_ex((target,port)) #returns am error indicator; 
+		print("Checking Port {} ".format(port))
 		if result == 0: 
 			print("Port {} is open".format(port))
 		s.close()
