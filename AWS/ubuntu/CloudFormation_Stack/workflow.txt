@@ -1,0 +1,14 @@
+Create AWS KeyPair for SSH access to EC2 instances
+configure AWS Command Line Interface (CLI)
+Define stack in YAML -containing EC2 instance 
+Update stack definition to install docker on EC2 instance
+Update stack to add RDS for MySQL database
+Define Docker Compose for application deployment
+Deploy the appliucation using docker compose & test
+
+you can you the key pair downloads to give you acess to ssh requests
+
+1.Make new directory
+2. copy the KeyPair from aws into the directory file 
+ends in .pem
+3. give file powers to write and execute "chmod 400 aws-key1.pem" <-- this should be executed in your project directory

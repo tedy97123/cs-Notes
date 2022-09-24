@@ -1,0 +1,30 @@
+Go to AWS Management Console
+
+go to find services and search ec2 (virtual servers in the cloud)
+
+launch instance
+
+find what image you want running as an os on the server instance
+
+choose t2 micro for small to moderate useage.
+
+configure security groups one SSH  SOURCE TYPE  AS ANYWHERE, two HTTP SOURCE TYPE MY IP
+
+How to connect you instance to your terminal in ubuntu:
+
+ Open an SSH client.
+
+Locate your private key file. The key used to launch this instance is Project : AWS.pem
+
+Run this command, if necessary, to ensure your key is not publicly viewable.
+
+ chmod 400 Project : AWS.pem
+
+Connect to your instance using its Public DNS:
+ ec2-54-241-140-157.us-west-1.compute.amazonaws.com
+
+ Example:
+ ssh -i "Project AWS.pem" ubuntu@(public ipv4)
+                    or
+ssh -i "Project AWS.pem" ubuntu@ec2-54-241-140-157.us-west-1.compute.amazonaws.com
+
