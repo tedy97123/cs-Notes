@@ -1,0 +1,22 @@
+Create a .yaml or .json templates containing Resourses
+
+Resourse example in .yaml
+
+AppendItemToListFunction:
+    Type:AWS::Lambda::Function 
+      Properties:
+        Handler: index.handler
+        Role: MyLambdaRole
+        Code:                                                                                   
+            ZipFile: !Sub |                                                             -                
+                var response = require('cfn-response');                                   |
+                exports.handler = function(event,context){                                |
+                    var responseData = {Value:event.ResourseProperties.List};             |    <----     Using substitution in the .yaml file to write inline javascript 
+                    responseData.Value.push(event.ResourseProperties.AppendItem)          |               this is the lambda function
+                    response.send(event, context, response.SUCCESS, responseData)         |
+                };                                                                       -
+        Runtime: nodejs8.10
+
+
+Stacks : logical groupings of your templates and your resourses. 
+Changesets: Difference between previous up load and the update current info. 
