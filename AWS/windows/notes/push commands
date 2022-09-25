@@ -1,0 +1,31 @@
+
+download amazon CLI here - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+aws configure -
+
+    make sure to first go to aws console manager and add user in the IAM management tab on your profile.
+
+    After that process is finished you should have 
+
+    accesskeyid,secretaccesskey, and password; use this information
+    when you run aws configuration in terminal.
+
+then run :
+
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/i2w0o8k7
+docker build -t express-app .
+docker push public.ecr.aws/i2w0o8k7/express-app:latest
+
+
+next go to the ECS Tab and configure your cluster
+
+once its created check in the ec2 tab
+
+then go to your cluster and assign it a task.
+
+check your security group by editing the inbount rules in teh security tab 
+then
+add rule with yoyu port sourcing from anywhere ipv4
+
+then go to ec2 click instances , find instance and click Instance Summary and copy the public ipv4 DNS and add your port.
+
